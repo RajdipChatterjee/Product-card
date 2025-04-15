@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    background: repeating-linear-gradient(45deg, #C33764, #1D2671);
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: fit-content;
+    background-color: rgb(73, 9, 46);
+    color: #fff;
+    border-radius: 9px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: all 0.4s ease;
+}
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transform: scale(1.01);
+    
+}
+
+.card img {
+    transition: all 2s ease-out;
+}
+.card:hover img {
+    transform: rotateZ(15deg) scale(1.6);
+}
+h2 {
+    margin-bottom: 0.7rem;
+    font-size: 2rem;
+}
+p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+.buttons {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.buttons * {
+    padding: 10px 15px;
+    font-weight: 800;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 5px;
+    background-color:rgb(240, 40, 80);
+    color: white;
+    box-shadow: rgb(24, 14, 14) 0px 20px 30px -10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.buttons *:hover {
+    background-color: rgb(140, 73, 172);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    cursor: pointer;
+}
