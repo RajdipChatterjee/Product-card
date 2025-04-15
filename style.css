@@ -34,10 +34,10 @@ html, body {
 }
 
 .card img {
-    transition: all 2s ease-out;
+    transition: all 1s ease-out;
 }
 .card:hover img {
-    transform: rotateZ(15deg) scale(1.6);
+    transform: rotateZ(20deg) scale(1.6) ;
 }
 h2 {
     margin-bottom: 0.7rem;
@@ -54,7 +54,7 @@ p {
     gap: 18px;
 }
 
-.buttons * {
+.buttons>* {
     padding: 10px 15px;
     font-weight: 800;
     font-size: 1.3rem;
@@ -64,10 +64,18 @@ p {
     color: white;
     box-shadow: rgb(24, 14, 14) 0px 20px 30px -10px;
     transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.buttons *:hover {
+.buttons>*:hover {
     background-color: rgb(140, 73, 172);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     cursor: pointer;
+}
+
+svg {
+    display: inline;
+    height: 34px ;
 }
